@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    background-color: #5B85AA;
+    color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(116, 107, 107, 0.3);
+    width: 600px;
+    margin: 3em;
+}
+
+@media (max-width: 375px) {
+    .container{
+        width: 345px;
+    }
+
+    .btn {
+        flex-direction: row;
+    }
+}
+
+h1{
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+form{
+    padding: 20px 40px;
+}
+
+.part{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-input{
+    border: 2px solid #F0F0F0;
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.box-label{
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+select, .choice{
+    cursor: pointer;
+}
+
+textarea{
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+button{
+    background-color: #5B85AA;
+    border: none;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 40px;
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #ACD2ED;
+    color: #5B85AA;
+}

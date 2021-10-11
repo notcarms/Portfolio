@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comfy</title>
+        <link rel="stylesheet" href="../css/product-landing-page.css">
+        <script src="https://kit.fontawesome.com/552f2967bc.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </head>
+    <body>
+        <nav> 
+            <header id="header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../Resources/logo-icon.png" id="header-img" class="logo-img" alt="comfy">
+                        <p class="logo-text">Comfy</p>
+                    </a>
+                </div>
+                    
+                <div class="nav-toggle">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <div id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#coll">Collection</a></li>
+                        <li><a class="nav-link" href="#works">Works</a></li>
+                        <li><a class="nav-link" href="#about">About us</a></li>
+                    </ul>
+                </div>
+            </header>
+        </nav>
+
+        <section id="homepage">
+            <div class="home-text">
+                <h1 class="homepage-title">Lorem ipsum<br>dolor sit amet</h1>
+                <p class="home-para">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                <a href="#" class="btn">View Shop</a> 
+            </div>
+            <img class="home-img" src="../Resources/homepage.jpg" alt="living room">
+        </section>
+
+        <section id="coll">
+            <h1 class="title">Collection</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../Resources/sofa.jpg" alt="sofa">
+                    <a href="#" class="btn">Sofa</a>
+                </div>
+                <div class="card">
+                    <img src="../Resources/table.jpg" alt="table">
+                    <a href="#" class="btn">Table</a>
+                </div>
+                <div class="card">
+                    <img src="../Resources/decors.jpg" alt="decors">
+                    <a href="#" class="btn">Decors</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="videoWrapperOuter">
+                <div class="videoWrapperInner">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/o_sanC9ASS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <h1 class="title">Works</h1>
+        </section>
+
+        <section id="about">
+            <h1 class="title">About<br>us</h1>
+            <div class="about-container">
+                <img src="../Resources/about.jpg" alt="living room">
+                <p>Duis posuere ullamcorper neque, id fermentum libero. Nullam eu egestas turpis. Duis malesuada consequat eleifend. Morbi rutrum porta mauris, quis tempor ex tincidunt sit amet.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="../Resources/footer-icon.png" class="footer-img" alt="comfy">
+                <div class="text"> 
+                    <a href="#" class="footer-text">Comfy</a>
+                    <p>© 2021</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#coll">Collection</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <p>Follow us:</p>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="subscribe">
+                <p>Join our news letter!</p>
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.nav-toggle').click(function(){
+                    $('#nav-bar').toggleClass('active');
+                    $('.nav-toggle').toggleClass('toggle');
+                    if($(window).width() < 1024) {
+                        $('header').toggleClass('change-bg');
+                    }
+                });
+
+                $('.nav-link').click(function(){
+                    $('#nav-bar').toggleClass('active');
+                    $('.nav-toggle').toggleClass('toggle');
+                    if($(window).width() < 1024) {
+                        $('header').toggleClass('change-bg');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

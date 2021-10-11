@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/552f2967bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div class="nav-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#about">About me.</a></li>
+                <li><a href="#projects">Works.</a></li>
+                <li><a href="#contacts">Contacts.</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="welcome-section">
+            <div class="title">
+                <h1>Hello,</h1>
+                <h1>World!</h1>
+            </div>
+
+            <div class="social">
+                <a href="https://mail.google.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="scroll-down">
+                <span>&#10230;</span>
+            </div>
+        </section>
+
+        <section id="portfolio-text">
+            <p class="text1">portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio.</p>
+            <p class="text2">portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio. portfolio.</p>
+        </section>
+
+        <section id="about">
+            <div class="text" data-aos="fade-right">
+                <h4 class="number">01</h4>
+                <h1 class="header">About me.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis iaculis pellentesque. Vivamus eros lacus, efficitur non dolor eget, pretium 
+                    tempor orci. Suspendisse eu enim a urna pretium tempor. Aenean eu condimentum velit. Fusce eu pellentesque est, tempor tincidunt enim. Ut 
+                    vulputate eleifend mattis. 
+                </p>
+            </div>
+            <div class="images" data-aos="fade-left">
+                <img src="../Resources/picture.jpg" alt="picture">
+                <div class="frame"></div>
+            </div>
+        </section>
+        
+        <section id="projects" data-aos="fade-up">
+            <h4 class="number">02</h4>
+            <h1 class="header">Works.</h1>
+            
+                <div class="project-tile">
+                    <a href="tribute-page.html">
+                        <img src="../Resources/tribute-page.png" alt="Tribute page">
+                        <h4 class="work-title">Tribute page.</h4>
+                    </a>
+                </div>
+
+                <div class="project-tile">
+                    <a href="survey-form.html">
+                        <img src="../Resources/survey-form.png" alt="Survey form">
+                        <h4 class="work-title">Survey form.</h4>
+                    </a>
+                </div>
+
+                <div class="project-tile">
+                    <a href="technical-documentation.html">
+                        <img src="../Resources/tech-docu-page.png" alt="Technical documentation">
+                        <h4 class="work-title">Technical documentation.</h4>
+                    </a>
+                </div>
+
+                <div class="project-tile">
+                    <a href="product-landing-page.html">
+                        <img src="../Resources/landing-page.png" alt="Landing page">
+                        <h4 class="work-title">Landing page.</h4>
+                    </a>
+                </div>
+        </section>
+
+        <section id="contacts">
+            <div class="text" data-aos="fade-right">
+                <h4 class="number">03</h4>
+                <h1 class="header">Contacts.</h1>
+            </div>
+
+            <div class="social-links" data-aos="fade-left">
+                <div class="social-container gmail">
+                    <a href="https://mail.google.com">
+                        <i class="fas fa-envelope"></i>
+                        <p>Gmail.</p>
+                    </a>
+                </div>
+
+                <div class="social-container linkedin">
+                    <a href="https://linkedin.com">
+                        <i class="fab fa-linkedin-in"></i>
+                        <p>Linkedin.</p>
+                    </a>
+                </div>
+
+                <div class="social-container facebook">
+                    <a href="https://facebook.com">
+                        <i class="fab fa-facebook-f"></i>
+                        <p>Facebook.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <footer>
+        <p>© carms 2021.</p>
+    </footer>
+    
+    <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    </script>
+</body>
+</html>

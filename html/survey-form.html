@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Survey Form</title>
+        <link rel="stylesheet" href="../css/survey-form.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1 id="title">Survey Form</h1>
+            <p id="description">Lorem ipsum dolor sit amet.</p>
+
+			<form id="survey-form" name=signUpForm method="post">
+				<div class="part">
+					<label class="form-label" for="name" id="name-label">Name: </label>
+					<input class="form-input" type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+				</div>
+
+				<div class="part">
+					<label class="form-label" for="email" id="email-label">Email: </label>
+					<input class="form-input" type="email" id="email" name="email" placeholder="juandelacruz@gmail.com" required>
+				</div>
+
+				<div class="part">
+					<label class="form-label" for="contactNum">Phone Number: </label>
+					<input class="form-input" type="tel" id="contactNum" name="contactNum" placeholder="09123456789" required>
+				</div>
+
+				<div class="part">
+					<label class="form-label" for="bdate">Birthday: </label>
+					<input class="form-input" type="date" id="bdate" name="bdate" required>
+				</div>
+
+                <div class="part">
+					<label class="form-label" for="number" id="number-label">Age: </label>
+					<input class="form-input" type="number" id="number" name="number" min="15" max="100" placeholder="15 or above" required>
+				</div>
+
+                <div class="part">
+                    <label class="form-label" for="gender">Gender: </label>
+                    <select class="form-input" name="gender" id="dropdown">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="part">
+                    <p class="box-label">How's your overall experience?</p>
+                    <input type="radio" id="answer1" class="choice" name="user-exp" value="extremely satisfied">
+                    <label for="answer1">Extremely Satisfied</label><br>
+                    <input type="radio" id="answer2" class="choice" name="user-exp" value="satisfied">
+                    <label for="answer2">Satisfied</label><br>
+                    <input type="radio" id="answer3" class="choice" name="user-exp" value="neutral">
+                    <label for="answer3">Neutral</label><br>
+                    <input type="radio" id="answer4" class="choice" name="user-exp" value="dissatisfied">
+                    <label for="answer4">Disatisfied</label><br>
+                    <input type="radio" id="answer5" class="choice" name="user-exp" value="extremely dissatisfied">
+                    <label for="answer5">Extremely Disatisfied</label>
+                </div>
+
+                <div class="part">
+                    <p class="box-label">What should be improved?</p>
+                    <input type="checkbox" id="option1" class="choice" name="option1" value="option1">
+                    <label for="option1">Option 1</label><br>
+                    <input type="checkbox" id="option2" class="choice" name="option2" value="option2">
+                    <label for="option2">Option 2</label><br>
+                    <input type="checkbox" id="option3" class="choice" name="option3" value="option3">
+                    <label for="option3">Option 3</label><br>
+                    <input type="checkbox" id="option4" class="choice" name="option4" value="option4">
+                    <label for="option4">Option 4</label><br>
+                    <input type="checkbox" id="option5" class="choice" name="option5" value="option5">
+                    <label for="option5">Option 5</label>
+                </div>
+
+                <div class="part">
+                    <p class="box-label">Comments or Suggestions:</p>
+                    <textarea name="message"></textarea>
+                </div>
+
+				<div class="btn">
+					<button class="reset" type=reset>Reset</button>
+					<button class="submit" id="submit" type=submit onclick="errorCheck()">Submit</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- <script>
+			function errorCheck()
+			{
+				let name = document.getElementById('name');
+				let contactNum = document.getElementById('contactNum');
+				let email = document.getElementById('email');
+			
+				if(fname.value.length == 0)
+				{
+					alert("First name cannot be blank.");
+					document.signUpForm.name.focus();
+					return;
+				}
+				if(contactNum.value.length == 0)
+				{
+					alert("Phone number cannot be blank.");
+					document.signUpForm.contactNum.focus();
+					return;
+				}
+				if(typeof contactNum != number && contactNum.value.length != 11)
+				{
+					alert("Please enter a valid phone number.");
+					document.signUpForm.contactNum.focus();
+					return;
+				}
+				if(email.value.length == 0)
+				{
+					alert("Please enter a valid email address.");
+					document.signUpForm.email.focus();
+					return;
+				}
+				document.signUpForm.submit();
+			}
+		</script> -->
+	</body>
+</html>
